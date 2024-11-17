@@ -1,0 +1,484 @@
+@font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff')
+        format('woff'),
+      url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2')
+        format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff')
+        format('woff'),
+      url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2')
+        format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff')
+        format('woff'),
+      url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2')
+        format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+body{
+    font-family: 'Phantom Sans';
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("https://highseas.hackclub.com/bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    height: 5em;
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+    padding: 0 4em;
+    font-weight: bold;
+}
+
+nav img{
+    height: 4em;
+}
+
+#logout-container{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+#logout-container img{
+    height: 2.5em;
+    border-radius: 50%;
+}
+
+#logout-container input[type=button]{
+    padding: 1em 2em;
+    background-color: white;
+    border-radius: .5em;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    min-height: 90vh;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 1em;
+    height: fit-content;
+    padding-bottom: 2em;
+}
+
+#page-nav{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    width: 98%;
+    height: 3em;
+    background-color: rgba(241,240,243,255);
+    border-radius: .5em;
+    margin-top: 1em;
+}
+
+#page-nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 1em;
+}
+
+#page-nav ul li{
+    padding: .5em 1em;
+    border-radius: .3em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#page-nav ul li:nth-of-type(3){
+    background-color: white;
+}
+
+main h1, main p{
+    color: white;
+}
+
+main h1{
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+main p{
+    padding: 0 2em;
+    font-size: 1.5em;
+}
+
+#projects{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    justify-content: center;
+    height: fit-content;
+    gap: 2em;
+}
+
+.card{
+    position: relative;
+    width: 40%;
+    height: fit-content;
+    background-color: white;
+    border-radius: .5em;
+    margin-top: 1em;
+}
+
+.card h3{
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    color: #6366f1;
+}
+
+.card img{
+    width: 90%;
+    height: 25vh;
+}
+
+.card span{
+    position: absolute;
+    top: -.2em;
+    left: 0;
+    font-size: 3.5em;
+    opacity: .1;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.card span:hover{
+    opacity: 1;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    gap: .5em;
+    padding: 2em;
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 2em;
+    gap: .5em;
+    flex: 0 0 33.33%;
+    padding: .15em;
+}
+
+.link p{
+    margin: 0;
+    padding: 0;
+    font-size: initial;
+    color: black;
+    cursor: pointer;
+}
+
+.repo{
+    color: rgb(37, 99, 235);
+    background-color: rgba(239,246,255,255);
+    border: 1px solid #e8f1ff;
+}
+
+.demo{
+    color: black;
+    background-color: white;
+    border: 1px solid rgb(229, 229, 229);
+}
+.readme{
+    color: rgb(147, 51, 234);
+    background-color: rgb(250, 245, 255);
+    border: 1px solid rgb(245, 235, 255);
+}
+
+.voting{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    width: 100%;
+    min-height: 10vh;
+    height: 10vh;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 0 0 .5em .5em;
+}
+
+.voting button{
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 70%;
+    border: none;
+    border-radius: .5em;
+    background-color: rgb(99, 102, 241);
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+.voting button:hover{
+    background-color: hsl(239, 84%, 62%);
+}
+
+#vs{
+    color: #6366f1;
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+#report{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    width: 95%;
+    min-height: 40vh;
+    height: fit-content;
+    background-color: white;
+    border-radius: .5em;
+    margin-top: 4em;
+    padding-bottom: 2em;
+    display: none;
+}
+
+#report h3{
+    color: #6366f1;
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+
+#report select{
+    border: 1px solid gray;
+    border-radius: .25em;
+    padding: .5em 1em;
+}
+
+#report textarea{
+    margin-top: 1em;
+    width: 90%;
+    resize: vertical;
+    min-height: 15vh;
+    border-radius: .25em;
+    padding: 1em;
+    font-size: 1.25em;
+}
+
+#report textarea::placeholder {
+    color: lightgray;
+    opacity: 1;
+    font-size: 1.25em;
+}
+  
+#report textarea::-ms-input-placeholder {
+    color: red;
+}
+
+#report-buttons{
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1em;
+}
+
+#report button:nth-of-type(1){
+    margin-top: 1em;
+    cursor: not-allowed;
+    padding: .5em 1em;
+    width: 40%;
+    height: 70%;
+    border: none;
+    border-radius: .25em;
+    background-color: #b1b2f8;
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+#report button:nth-of-type(2){
+    margin-top: 1em;
+    cursor: pointer;
+    padding: .3em .6em;
+    height: 70%;
+    aspect-ratio: 1 / 1;
+    border: none;
+    border-radius: .25em;
+    background-color: #9ad9ee;
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+#popup{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 30%;
+    height: fit-content;
+    background-color: white;
+    border-radius: .5em;
+    z-index: 2;
+    padding: 2em;
+}
+
+#popup span{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    padding: .25em;
+    aspect-ratio: 1 / 1;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#popup h2{
+    text-align: center;
+}
+
+#popup p{
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 0;
+}
+
+#popup-btn{
+    cursor: pointer;
+    padding: .25em .5em;
+    width: 40%;
+    height: 70%;
+    border: none;
+    border-radius: .25em;
+    background-color: rgb(99, 102, 241);
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+    transition: all .5s;
+    text-align: center;
+}
+
+#popup button:hover{
+    background-color: hsl(239, 84%, 62%);
+}
+
+#overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+@media (max-width: 1440px) {
+    main{
+        width: 70%;
+    }
+}
+
+@media (max-width: 1025px) {
+    #projects{
+        flex-direction: column;
+    }
+    .card{
+        width: 60%;
+    }
+    #popup{
+        width: 50%;
+    }
+}
+
+@media (max-width: 770px) {
+    main{
+        width: 100%;
+    }
+    .card{
+        width: 80%;
+    }
+    #popup{
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    #page-nav ul{
+        gap: .5em;
+    }
+    
+    #page-nav ul li{
+        font-size: .75em;
+    }
+
+    nav{
+        padding: 0 2em;
+    }
+    
+    nav img{
+        height: 3em;
+    }
+    
+    #logout-container{
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        gap: 2em;
+    }
+    
+    #logout-container img{
+        height: 2em;
+        border-radius: 50%;
+    }
+    
+    #logout-container input[type=button]{
+        font-size: .75em;
+    }
+
+    #popup-btn{
+        width: 50%;
+    }
+}
