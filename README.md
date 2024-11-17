@@ -5,24 +5,49 @@
 [![MIT License][license-shield]][license-url]
 
 <br />
-  <h2 align="center">High Seas Fraud Report Concept</h2>
+  <h2 align="center">High Seas Shop API</h2>
 
   <p align="center">
-    My concept on how to report fraud in the High Seas Wonderdome
+    An API to get json data about all or one specified item from the Hack Club High Seas store.
     <br />
 </div>
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+![Demo image](https://github.com/user-attachments/assets/5c6cf9c6-b1a5-4dfc-bb51-448bef1916f6)
 
-![website-image](https://github.com/user-attachments/assets/8177d167-6607-49ef-942d-53c5e1ca5772)
+<!-- API USAGE INSTRUCTIONS -->
+## Usage instructions
 
+The API has 2 endpoints:
 
-As you might know High Seas has a pretty big problem with fraud. And so far there is no way to report it during voting in the Wonderdome - you have to manually message a memeber of the fraud team. And so I decided to make this concept to see what people think of it.
-<br />
-<br />
-While creating it I also had the fraud team in mind - once a user deecides to report something as fraud they have to specify what type of fraud it is and also write a description of 10 words minimum. This is done to prevent unthoughtful and unmindful reports.
+* https://high-seas-shop-api.hubert-krajnik.hackclub.app/api/
 
+* https://high-seas-shop-api.hubert-krajnik.hackclub.app/api/item-name
+
+The first one returns data about all items and the second returns data about an item that you specified in the place of "item-name". The item name should be the same an the one shown in the <a href="https://highseas.hackclub.com/shop">High Seas Store</a>. E.g. "iPad"
+
+![Item naming](https://github.com/user-attachments/assets/5598271e-ed6a-42a8-a985-fb2b792635d5)
+
+An example response looks like this:
+```
+{
+    "id":"item_ipad_46",
+    "name":"iPad",
+    "subtitle":"10th gen (w/ Apple Pencil!)",
+    "imageUrl":"https://noras-secret-cdn.hackclub.dev/shop/ipad.png",
+    "enabledUs":true,
+    "enabledEu":true,
+    "enabledIn":true,
+    "enabledXx":true,
+    "enabledCa":true,
+    "priceUs":2090,
+    "priceGlobal":2090,
+    "fulfilledAtEnd":true,
+    "comingSoon":false,
+    "outOfStock":false,
+    "minimumHoursEstimated":7749999999999999,
+    "maximumHoursEstimated":387.49999999999994
+}
+```
 ## Built With
 
 * ![Static Badge](https://img.shields.io/badge/HTML-%23E34F26?style=for-the-badge&logo=html5&labelColor=white)
@@ -31,16 +56,18 @@ While creating it I also had the fraud team in mind - once a user deecides to re
 
 * ![Static Badge](https://img.shields.io/badge/JavaScript-%23F7DF1E?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E&labelColor=white)
 
+* ![Static Badge](https://img.shields.io/badge/express-%23000000?style=for-the-badge&logo=express&logoColor=black&labelColor=white)
+
 ## Live demo
 
-The project is avalible under this url: <a href="https://hubert-krajnik.hackclub.app/high-seas-fraud-report-concept/">https://hubert-krajnik.hackclub.app/high-seas-fraud-report-concept/</a>
+A working demo of this API is avalible under this url: <a href="https://hubert-krajnik.hackclub.app/high-seas-shop-api-demo/">https://hubert-krajnik.hackclub.app/high-seas-shop-api-demo/</a>
 <hr/>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[stars-shield]: https://img.shields.io/github/stars/HubertKr4jnik/emoddji?style=for-the-badge
-[stars-url]: https://github.com/HubertKr4jnik/emoddji/stargazers
-[issues-shield]: https://img.shields.io/github/issues/HubertKr4jnik/emoddji?style=for-the-badge
-[issues-url]: https://github.com/HubertKr4jnik/emoddji/issues
-[license-shield]: https://img.shields.io/github/license/HubertKr4jnik/emoddji?style=for-the-badge
-[license-url]: https://img.shields.io/github/HubertKr4jnik/emoddji/LICENSE.txt
+[stars-shield]: https://img.shields.io/github/stars/HubertKr4jnik/high-seas-shop-api?style=for-the-badge
+[stars-url]: https://github.com/HubertKr4jnik/high-seas-shop-api/stargazers
+[issues-shield]: https://img.shields.io/github/issues/HubertKr4jnik/high-seas-shop-api?style=for-the-badge
+[issues-url]: https://github.com/HubertKr4jnik/high-seas-shop-api/issues
+[license-shield]: https://img.shields.io/github/license/HubertKr4jnik/high-seas-shop-api?style=for-the-badge
+[license-url]: https://img.shields.io/github/HubertKr4jnik/high-seas-shop-api/LICENSE.txt

@@ -10,7 +10,16 @@ const submitReport = ()=>{
         submitBtn.innerText = 'Select a fraud type';
     }
     else{
-        window.location.reload();
+        window.scrollTo(0,0)
+        document.getElementById("report").style.display = "none";
+        document.getElementById("popup").querySelector("h2").innerText = "Thank you for submitting a report"
+        document.getElementById("popup").querySelector("p").innerText = "We will look into it shortly.";
+        document.getElementById("popup-btn").innerText = "Onto the next";
+        document.getElementById("popup-btn").addEventListener('click', ()=>{
+            window.location.reload();
+        })
+        document.getElementById("popup").style.display = "flex";
+        document.getElementById("overlay").style.display = "block";
     }
 }
 
