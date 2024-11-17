@@ -15,8 +15,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![website-image](https://github.com/user-attachments/assets/8177d167-6607-49ef-942d-53c5e1ca5772)
-
+![project-image](https://github.com/user-attachments/assets/43aa7715-6d2b-4bd1-8c02-20c655d73500)
 
 As you might know High Seas has a pretty big problem with fraud. And so far there is no way to report it during voting in the Wonderdome - you have to manually message a memeber of the fraud team. And so I decided to make this concept to see what people think of it.
 <br />
@@ -38,9 +37,9 @@ The project is avalible under this url: <a href="https://hubert-krajnik.hackclub
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[stars-shield]: https://img.shields.io/github/stars/HubertKr4jnik/emoddji?style=for-the-badge
-[stars-url]: https://github.com/HubertKr4jnik/emoddji/stargazers
-[issues-shield]: https://img.shields.io/github/issues/HubertKr4jnik/emoddji?style=for-the-badge
-[issues-url]: https://github.com/HubertKr4jnik/emoddji/issues
-[license-shield]: https://img.shields.io/github/license/HubertKr4jnik/emoddji?style=for-the-badge
-[license-url]: https://img.shields.io/github/HubertKr4jnik/emoddji/LICENSE.txt
+[stars-shield]: https://img.shields.io/github/stars/HubertKr4jnik/high-seas-fraud-report-concept?style=for-the-badge
+[stars-url]: https://github.com/HubertKr4jnik/high-seas-fraud-report-concept/stargazers
+[issues-shield]: https://img.shields.io/github/issues/HubertKr4jnik/high-seas-fraud-report-concept?style=for-the-badge
+[issues-url]: https://github.com/HubertKr4jnik/high-seas-fraud-report-concept/issues
+[license-shield]: https://img.shields.io/github/license/HubertKr4jnik/high-seas-fraud-report-concept?style=for-the-badge
+[license-url]: https://img.shields.io/github/HubertKr4jnik/high-seas-fraud-report-concept/LICENSE.txt
